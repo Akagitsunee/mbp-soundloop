@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.mbp-soundloop</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/mbp-soundloop</string>
+        <string>-input</string>
+        <string>USB</string>
+        <string>-output</string>
+        <string>WH-1000XM4</string>
+        <string>-buf</string>
+        <string>256</string>
+        <string>-rate</string>
+        <string>48000</string>
+        <string>-silence</string>
+        <string>30s</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/tmp/mbp-soundloop.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/mbp-soundloop.log</string>
+</dict>
+</plist>
